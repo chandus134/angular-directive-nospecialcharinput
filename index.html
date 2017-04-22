@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.2.10" src="https://code.angularjs.org/1.2.10/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="myCtrl">
+    <form name="myForm">
+    Username : <input type="text"  ng-model="username" name="userName" required no-special-char>
+   <span  ng-show="!myForm.userName.$error.noSpecialChar">enter valid username</span><br>
+   
+   firstname : <input type="text"  ng-model="firstname" name="firstname" required no-special-char>
+   <span  ng-show="!myForm.firstname.$error.noSpecialChar">enter valid firstname</span>
+   
+   </form>
+   
+  </body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html> -->
+<!--<html>-->
+
+<!--  <head>-->
+<!--    <script data-require="angular.js@*" data-semver="1.2.10" src="https://code.angularjs.org/1.2.10/angular.js"></script>-->
+<!--    <script src="app.js"></script>-->
+<!--  </head>-->
+<!--  <body ng-app="app" ng-controller="myCtrl">-->
+<!--    Username : <input type="text" no-special-char ng-model="username" name="userName">-->
+<!--   <span  ng-show="flag">invalid</span>-->
+<!--   Username : <input type="text" no-special-char ng-model="firstname" name="firstname">-->
+<!--   <span  ng-show="flag">invalid</span>-->
+<!--  </body>-->
+
+<!--</html>-->
+
